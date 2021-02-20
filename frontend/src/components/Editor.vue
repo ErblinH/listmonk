@@ -7,13 +7,16 @@
           <div>
             <b-radio v-model="form.radioFormat"
               @input="onChangeFormat" :disabled="disabled" name="format"
-              native-value="richtext">{{ $t('campaigns.richText') }}</b-radio>
+              native-value="richtext"
+              data-cy="check-richtext">{{ $t('campaigns.richText') }}</b-radio>
             <b-radio v-model="form.radioFormat"
               @input="onChangeFormat" :disabled="disabled" name="format"
-              native-value="html">{{ $t('campaigns.rawHTML') }}</b-radio>
+              native-value="html"
+              data-cy="check-rawhtml">{{ $t('campaigns.rawHTML') }}</b-radio>
             <b-radio v-model="form.radioFormat"
               @input="onChangeFormat" :disabled="disabled" name="format"
-              native-value="plain">{{ $t('campaigns.plainText') }}</b-radio>
+              native-value="plain"
+              data-cy="check-plain">{{ $t('campaigns.plainText') }}</b-radio>
           </div>
         </b-field>
       </div>
